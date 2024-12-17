@@ -147,9 +147,7 @@ public class TileEntityTurbineCasing extends TileEntityMultiblock<SynchronizedTu
 	@Override
 	public double getMaxEnergy() 
 	{
-		if(structure != null)
 			return structure.getEnergyCapacity();
-		return 0.0;
 	}
 
 	@Override
@@ -169,7 +167,7 @@ public class TileEntityTurbineCasing extends TileEntityMultiblock<SynchronizedTu
 			return 0;
 		}
 
-		return structure.fluidStored.amount*i / structure.getFluidCapacity();
+		return (int) (i*structure.fluidStored.amount / structure.getFluidCapacity());
 	}
 	
 	@Override

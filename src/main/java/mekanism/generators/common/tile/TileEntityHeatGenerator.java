@@ -165,7 +165,7 @@ public class TileEntityHeatGenerator extends TileEntityGenerator implements IFlu
 	@Override
 	public boolean canOperate()
 	{
-		return electricityStored < BASE_MAX_ENERGY && lavaTank.getFluid() != null && lavaTank.getFluid().amount >= 10 && MekanismUtils.canFunction(this);
+		return electricityStored < BASE_MAX_ENERGY && lavaTank.getFluid() != null && lavaTank.getFluid().amount >= generators.heatGenerationFluidRate && MekanismUtils.canFunction(this);
 	}
 
 	@Override
@@ -424,9 +424,9 @@ public class TileEntityHeatGenerator extends TileEntityGenerator implements IFlu
 	{
 		if(getTemp() > 0)
 		{
-			double carnotEfficiency = getTemp() / (getTemp() + IHeatTransfer.AMBIENT_TEMP);
+			//double carnotEfficiency = getTemp() / (getTemp() + IHeatTransfer.AMBIENT_TEMP);
 			double heatLost = thermalEfficiency * getTemp();
-			double workDone = heatLost * carnotEfficiency;
+			double workDone = heatLost; //* carnotEfficiency;
 			transferHeatTo(-heatLost);
 			setEnergy(getEnergy() + workDone);
 		}
@@ -451,11 +451,8 @@ public class TileEntityHeatGenerator extends TileEntityGenerator implements IFlu
 	@Override
 	public boolean canConnectHeat(ForgeDirection side)
 	{
-		if(generators.heatGenEnable == true){
+
 		return side == ForgeDirection.DOWN;
-		}else {
-		return side == ForgeDirection.UNKNOWN;
-		}
 	}
 
 	@Override

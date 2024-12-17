@@ -21,7 +21,6 @@ item.CompressedCarbon.name=Compressed Carbon
 item.CompressedRedstone.name=Compressed Redstone
 item.CompressedDiamond.name=Compressed Diamond
 item.CompressedObsidian.name=Compressed Obsidian
-item.CompressedEnder.name=Compressed Ender Amethyst
 item.PortableTeleporter.name=Portable Teleporter
 item.TeleportationCore.name=Teleportation Core
 item.Configurator.name=Configurator
@@ -34,7 +33,6 @@ item.Dictionary.name=Dictionary
 item.ElectrolyticCore.name=Electrolytic Core
 item.Sawdust.name=Sawdust
 item.Salt.name=Salt
-item.Yeast.name=Yeast
 item.BrineBucket.name=Brine Bucket
 item.LithiumBucket.name=Lithium Bucket
 item.HeavyWaterBucket.name=Heavy Water Bucket
@@ -49,9 +47,8 @@ item.PlaStick.name=PlaStick
 item.Substrate.name=Substrate
 item.Flamethrower.name=Flamethrower
 item.GaugeDropper.name=Gauge Dropper
-item.BioFuel.name=Biomass
+item.BioFuel.name=Bio Fuel
 item.CraftingFormula.name=Crafting Formula
-item.RawOsmiumOre.name=Raw Osmium
 
 //Control Circuits
 item.BasicControlCircuit.name=Basic Control Circuit
@@ -118,7 +115,6 @@ tile.BasicBlock2.PressureDisperser.name=Pressure Disperser
 tile.BasicBlock2.BoilerCasing.name=Boiler Casing
 tile.BasicBlock2.BoilerValve.name=Boiler Valve
 tile.BasicBlock2.SecurityDesk.name=Security Desk
-tile.BasicBlock2.RawOsmiumBlock.name=Raw Osmium Block
 
 //Machine Block
 tile.MachineBlock.EnrichmentChamber.name=Enrichment Chamber
@@ -180,16 +176,11 @@ infuse.redstone=Redstone
 infuse.fungi=Fungi
 infuse.obsidian=Obsidian
 infuse.bio=Biomass
-infuse.ender=Ender
-infuse.lead=Lead
 
 //Ore Block
 tile.OreBlock.OsmiumOre.name=Osmium Ore
 tile.OreBlock.CopperOre.name=Copper Ore
 tile.OreBlock.TinOre.name=Tin Ore
-tile.DeepslateOreBlock.OsmiumOre.name=Deepslate Osmium Ore
-tile.DeepslateOreBlock.CopperOre.name=Deepslate Copper Ore
-tile.DeepslateOreBlock.TinOre.name=Deepslate Tin Ore
 
 //Transmitters
 item.MultipartTransmitter.BasicPressurizedTube.name=Basic Pressurized Tube
@@ -290,8 +281,6 @@ item.glowstoneIngot.name=Glowstone Ingot
 item.steelIngot.name=Steel Ingot
 item.copperIngot.name=Copper Ingot
 item.tinIngot.name=Tin Ingot
-item.lazuliIngot.name=Lazuli Ingot
-
 
 //Gasses
 gas.hydrogen=Hydrogen
@@ -303,7 +292,6 @@ gas.sulfurTrioxideGas=Sulfur Trioxide
 gas.sulfuricAcid=Sulfuric Acid
 gas.hydrogenChloride=Hydrogen Chloride
 gas.liquidOsmium=Liquid Osmium
-gas.liquidPlatinum=Liquid Platinum
 gas.liquidStone=Liquid Stone
 gas.ethene=Ethylene
 gas.sodium=Sodium
@@ -312,15 +300,10 @@ gas.deuterium=Deuterium
 gas.tritium=Tritium
 gas.lithium=Lithium
 gas.fusionFuelDT=D-T Fuel
-gas.methane=Methane
-gas.biomass=BioGas
-gas.bioethanol=Ethanol Vapor
-gas.molasse=Molasse
 
 gas.iron=Iron Slurry
 gas.gold=Gold Slurry
 gas.osmium=Osmium Slurry
-gas.platinum=Platinum Slurry
 gas.copper=Copper Slurry
 gas.tin=Tin Slurry
 gas.silver=Silver Slurry
@@ -330,7 +313,6 @@ gas.lead=Lead Slurry
 gas.cleanIron=Clean Iron Slurry
 gas.cleanGold=Clean Gold Slurry
 gas.cleanOsmium=Clean Osmium Slurry
-gas.cleanPlatinum=Clean Platinum Slurry
 gas.cleanCopper=Clean Copper Slurry
 gas.cleanTin=Clean Tin Slurry
 gas.cleanSilver=Clean Silver Slurry
@@ -358,10 +340,6 @@ fluid.deuterium=Liquid Deuterium
 fluid.tritium=Liquid Tritium
 fluid.fusionFuelDT=Liquid D-T Fuel
 fluid.steam=Steam
-fluid.biomass=Biomatter
-fluid.bioethanol=Ethanol
-fluid.molasse=Liquid Molasse
-
 
 //OreGas names
 oregas.iron=Iron Ore
@@ -422,13 +400,6 @@ mekanism.configgui.ctgy.machines=Machine Settings
 mekanism.configgui.ctgy.tier=Tier Settings
 mekanism.configgui.ctgy.usage=Usage Settings
 mekanism.configgui.ctgy.client=Client Settings
-mekanism.configgui.ctgy.mekce=MEK:CE General Settings
-mekanism.configgui.ctgy.gengeneral=Mekanism Generators Settings
-mekanism.configgui.ctgy.mekcegen=MEK:CE Generators Settings
-mekanism.configgui.ctgy.recipe=MEK:CE Recipe Settings
-mekanism.configgui.ctgy.mekce_client=MEK:CE Client Settings
-mekanism.configgui.ctgy.recipegen=MEK:CE Generators Recipe Settings
-
 
 //Config Tooltips
 mekanism.configgui.ctgy.general.tooltip=General settings regarding Mekanism and all its modules
@@ -436,12 +407,6 @@ mekanism.configgui.ctgy.machines.tooltip=Settings regarding enabling and disabli
 mekanism.configgui.ctgy.tier.tooltip=Settings regarding Mekanism tiers and their corresponding values
 mekanism.configgui.ctgy.usage.tooltip=Settings regarding machinery and their energy usage
 mekanism.configgui.ctgy.client.tooltip=Client-specific settings regarding Mekanism and all its modules
-mekanism.configgui.ctgy.mekce.tooltip=General settings added by MEK:CE
-mekanism.configgui.ctgy.gengeneral.tooltip=General settings regarding Mekanism Generators
-mekanism.configgui.ctgy.mekcegen.tooltip=Generators settings added by MEK:CE
-mekanism.configgui.ctgy.recipe.tooltip=Recipe settings added by MEK:CE
-mekanism.configgui.ctgy.mekce_client.tooltip=Client settings added by MEK:CE
-mekanism.configgui.ctgy.recipegen.tooltip=Recipe settings added by MEK:CE
 
 //Gui text
 gui.condensentrating=Condensentrating
@@ -521,7 +486,6 @@ gui.undefined=Undefined
 gui.owner=Owner
 gui.public=Public
 gui.private=Private
-gui.trusted=Trusted
 gui.add=Add
 gui.set=Set
 gui.freq=Freq
@@ -711,7 +675,6 @@ gui.digitalMiner.inverse=Inverse mode
 gui.digitalMiner.requireReplace=Require replace
 gui.digitalMiner.fuzzyMode=Fuzzy mode
 gui.digitalMiner.missingBlock=Missing block
-gui.trusted=Trusted
 
 //Recipe names
 recipe.mekanismShaped=Shaped
@@ -877,7 +840,7 @@ tooltip.QuantumEntangloporter=A highly-advanced block capable of transmitting an
 tooltip.HeatGenerator=A generator that uses the heat of lava or other burnable resources to produce energy.
 tooltip.SolarGenerator=A generator that uses the power of the sun to produce energy.
 tooltip.GasGenerator=A generator that harnesses the molecular varying gasses to produce energy.
-tooltip.BioGenerator=A generator that burns organic-based gases to produce energy.
+tooltip.BioGenerator=A generator that burns organic materials of the world to produce energy.
 tooltip.AdvancedSolarGenerator=An advanced generator that directly absorbs the sun's rays with little loss to produce energy.
 tooltip.WindGenerator=A generator that uses the strength of the wind to produce energy, with greater efficiency at higher levels.
 tooltip.TurbineRotor=The steel rod that is used to house Turbine Blades within an Industrial Turbine.
@@ -899,9 +862,6 @@ tooltip.ReactorLogicAdapter=A block that can be used to allow basic monitoring o
 tooltip.OsmiumOre=A strong mineral that can be found at nearly any height in the world. It is known to have many uses in the construction of machinery.
 tooltip.CopperOre=A common, conductive material that can be used in the production of wires. Its ability to withstand high heats also makes it essential to advanced machinery.
 tooltip.TinOre=A lightweight, yet sturdy, conductive material that is found slightly less commonly than Copper.
-tooltip.tile.DeepslateOreBlock.OsmiumOre=A strong mineral that can be found at nearly any height in the world. It is known to have many uses in the construction of machinery.
-tooltip.tile.DeepslateOreBlock.CopperOre=A common, conductive material that can be used in the production of wires. Its ability to withstand high heats also makes it essential to advanced machinery.
-tooltip.tile.DeepslateOreBlock.TinOre=A lightweight, yet sturdy, conductive material that is found slightly less commonly than Copper.
 
 //Side data
 sideData.None=None
@@ -1026,9 +986,6 @@ tile.ReactorGlass.ReactorLaserFocusMatrix.name=Laser Focus Matrix
 gui.heatGenerator.fuel=Fuel
 gui.solarGenerator.sun=Sun
 gui.bioGenerator.bioFuel=BioFuel
-gui.bioGenerator.bioGas=BioGas
-gui.bioGenerator.bioEthanol=Ethanol
-
 gui.electrolyticSeparator.dump=Dump
 
 gui.passive=Air-Cooled
@@ -1133,5 +1090,3 @@ mekanism.configgui.ctgy.tools.tools=Tools Balance
 mekanism.configgui.ctgy.tools.general.tooltip=Settings regarding MekanismTools' general configuration
 mekanism.configgui.ctgy.tools.armor.tooltip=Settings regarding the protection values and balance of MekanismTools armor sets
 mekanism.configgui.ctgy.tools.tools.tooltip=Settings regarding the efficiency values and balance of MekanismTools tool sets
-
-mekanism.gui.noWind=No wind

@@ -30,7 +30,7 @@ import cpw.mods.fml.common.registry.IEntityAdditionalSpawnData;
 public class EntityFlame extends Entity implements IEntityAdditionalSpawnData
 {
 	public static final int LIFESPAN = 80;
-	public static final int DAMAGE = 10;
+	public static final int DAMAGE = 2;
 	
 	public Entity owner = null;
     public ItemFlamethrower.FlamethrowerMode mode = ItemFlamethrower.FlamethrowerMode.COMBAT;
@@ -55,7 +55,7 @@ public class EntityFlame extends Entity implements IEntityAdditionalSpawnData
 		Pos3D mergedVec = playerPos.clone().translate(flameVec);
 		setPosition(mergedVec.xPos, mergedVec.yPos, mergedVec.zPos);
 		
-		Pos3D motion = new Pos3D(0.4, 0.4, 0.4);
+		Pos3D motion = new Pos3D(1.2, 1.2, 1.2);
 		motion.multiply(new Pos3D(player.getLookVec()));
 		
 		setHeading(motion);
@@ -274,6 +274,7 @@ public class EntityFlame extends Entity implements IEntityAdditionalSpawnData
 	{
     	entity.setFire(20);
         entity.attackEntityFrom(getFlamethrowerDamage(), DAMAGE);
+		entity.hurtResistantTime = 2;
 	}
 	
 	private DamageSource getFlamethrowerDamage()

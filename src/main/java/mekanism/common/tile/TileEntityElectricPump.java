@@ -260,11 +260,16 @@ public class TileEntityElectricPump extends TileEntityElectricBlock implements I
 	
 	private boolean shouldTake(FluidStack fluid, Coord4D coord)
 	{
-		if(fluid.getFluid() == FluidRegistry.WATER || fluid.getFluid() == FluidRegistry.getFluid("heavywater"))
+		if(fluid.getFluid() == FluidRegistry.WATER)
 		{
 			return general.pumpWaterSources;
 		}
-		
+
+		if(fluid.getFluid() == FluidRegistry.getFluid("heavywater"))
+		{
+			return false;
+		}
+
 		return true;
 	}
 
